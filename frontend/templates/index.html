@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sudoku Solver</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="page-bg"></div>
+  <div class="container" role="main">
+    <h1>Sudoku Solver</h1>
+    <p class="subtitle">Paste numbers or type — use 0 or blank for empty cells</p>
+
+    <form id="sudoku-form" onsubmit="return false;">
+      <div class="board-wrap">
+        <div class="grid" aria-label="Sudoku grid"></div>
+      </div>
+
+      <div class="controls">
+        <button type="button" id="solve-btn">Solve</button>
+        <button type="button" id="clear-btn">Clear</button>
+        <button type="button" id="fill-sample">Load Sample</button>
+      </div>
+    </form>
+
+    <div id="message" class="message" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
